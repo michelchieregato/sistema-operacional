@@ -2,7 +2,7 @@ Tempo da Acao,Acao,Nome Do Job,Prioridade,Duracao (CLKs),Tamanho (Kbytes),Arquiv
 0,adicionar,job_1,1,200,300,['arquivo1']
 0,adicionar,job_2,1,100,300,[]
 0,adicionar,job_3,1,250,300,[]
-0,adicionar,job_4,2,300,300,['arquivo1']
+0,adicionar,job_4,2,300,300,[]
 50,adicionar,job_5,2,100,150,['arquivo2']
 250,adicionar,job_6,1,500,150,[]
 250,adicionar,job_7,1,240,100,['arquivo1']

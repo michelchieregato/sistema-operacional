@@ -1,6 +1,6 @@
 from enum import Enum
 
-from sistema.fila_prioridade import FilaDePrioridade
+from sistema.fila_prioridade import FilaDePrioridade, find_sub_list
 from sistema.job import EstadoJob
 
 TAMANHO_TOTAL = 1000
@@ -19,17 +19,6 @@ class Memoria:
         self.jobs_ativos = []
         self.fila_de_espera = FilaDePrioridade()
 
-    def _find_sub_list(self, sl):
-        """
-        Procura pela primeira sequencia de zeros do tamanho do job
-        """
-        results = []
-        sll = len(sl)
-        for ind in (i for i, e in enumerate(self.espacos_de_memoria) if e == sl[0]):
-            if self.espacos_de_memoria[ind:ind + sll] == sl:
-                return ind, ind + sll - 1
-        return results
-
     def _remove_job_ativo(self, job_name):
         self.jobs_ativos = [*filter(lambda x: x.name != job_name, self.jobs_ativos)]
 
@@ -38,7 +27,7 @@ class Memoria:
         Tenta alocar job na fila. Se o job não cabe na memória, coloca-o na fila.
         """
         espaco_necessario = [ESPACO_LIVRE] * job.tamanho
-        indices_da_memoria = self._find_sub_list(espaco_necessario)
+        indices_da_memoria = find_sub_list(self.espacos_de_memoria, espaco_necessario)
         if indices_da_memoria:
             print('Alocando job {} na memória, nas posicoes de {} a {}'.format(job.name, indices_da_memoria[0], indices_da_memoria[0]))
             self.espacos_ocupados[job.name] = indices_da_memoria
@@ -84,7 +73,7 @@ class Memoria:
             self.remove_job_da_memoria(name)
 
     def mostra_jobs(self):
-        print('Jobs na fila, por ordem:')
+        print('Jobs na fila da memória, por ordem:')
         for job in self.fila_de_espera.queue:
             print(job)
         print('\nJobs na memória, e posicoes que ocupam:')

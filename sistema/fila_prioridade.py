@@ -34,3 +34,15 @@ class FilaDePrioridade(object):
     def pop(self):
         if not self.isEmpty():
             return self.queue.pop(0)
+
+
+def find_sub_list(espacos, sl):
+    """
+    Procura pela primeira sequencia de zeros do tamanho do job
+    """
+    results = []
+    sll = len(sl)
+    for ind in (i for i, e in enumerate(espacos) if e == sl[0]):
+        if espacos[ind:ind + sll] == sl:
+            return ind, ind + sll - 1
+    return results

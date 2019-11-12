@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf20d2f5-d722-445f-9818-6be366ea3e4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SistemaOperacional.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/arquivos/jobs.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_do_sistema.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistema/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistema/disco.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistema/fila_prioridade.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistema/job.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistema/memoria.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sistema/sistema_operacional.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/jobs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/jobs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/disco.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/disco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/fila_prioridade.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/fila_prioridade.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/job.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/job.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/memoria.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/memoria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema/sistema_operacional.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/sistema_operacional.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Envs/CBIR/bin/python2.7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -78,7 +68,8 @@
       <updated>1573348638180</updated>
       <workItem from="1573348646882" duration="8963000" />
       <workItem from="1573408741769" duration="2633000" />
-      <workItem from="1573411429806" duration="6408000" />
+      <workItem from="1573411429806" duration="12501000" />
+      <workItem from="1573519528290" duration="2148000" />
     </task>
     <servers />
   </component>
@@ -90,7 +81,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
