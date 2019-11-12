@@ -24,7 +24,7 @@ class Disco:
         if indices_da_memoria:
             self.espacos_ocupados[arquivo.name] = indices_da_memoria
             self.arquivos[arquivo.name] = arquivo.tamanho
-            for i in range(*indices_da_memoria):
+            for i in range(indices_da_memoria[0], indices_da_memoria[1]):
                 self.espacos_de_memoria[i] = 1
             print('Arquivo Adicionado!')
             print(self)
@@ -60,8 +60,8 @@ class Disco:
         message += '\nJobs na fila, por ordem:\n'
         for job in self.fila_de_espera.queue:
             message += str(job)
-        message += '\nArquivos na memória, e posicoes que eles ocupam:\n'
+        message += '\nArquivos no disco, e posicoes que eles ocupam:\n'
         for key, value in self.espacos_ocupados.items():
-            message += 'Job {}:\n'.format(key)
-            message += '\tPosicoes: [{}, {}]'.format(value[0], value[1])
+            message += 'Arquivo {}:\n'.format(key)
+            message += '\tPosicoes: [{}, {}]\n'.format(value[0], value[1])
         return message

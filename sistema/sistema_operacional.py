@@ -23,6 +23,7 @@ class SistemaOperacional:
             try:
                 terminou = job.implementar()
             except IOException:
+                print('Chamada de IO para o JOB:')
                 print(job)
                 self.memoria.remove_job(job.name)
                 self.disco.adiciona_job(job)

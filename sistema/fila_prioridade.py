@@ -23,8 +23,6 @@ class FilaDePrioridade(object):
         for i, job in enumerate(self.queue):
             print('Job', job)
             print('Nome do job', job.name)
-            print(type(job.name))
-            print(type(name))
             if job.name == name:
                 self.queue.pop(i)
                 return True

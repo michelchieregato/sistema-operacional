@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistema/disco.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/disco.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistema/fila_prioridade.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/fila_prioridade.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistema/job.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/job.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistema/memoria.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/memoria.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistema/sistema_operacional.py" beforeDir="false" afterPath="$PROJECT_DIR$/sistema/sistema_operacional.py" afterDir="false" />
     </list>

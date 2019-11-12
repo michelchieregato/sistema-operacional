@@ -3,7 +3,7 @@ from enum import Enum
 from sistema.fila_prioridade import FilaDePrioridade, find_sub_list
 from sistema.job import EstadoJob
 
-TAMANHO_TOTAL = 1000
+TAMANHO_TOTAL = 100
 ESPACO_LIVRE = 0
 
 
@@ -32,7 +32,7 @@ class Memoria:
             print('Alocando job {} na memória, nas posicoes de {} a {}'.format(job.name, indices_da_memoria[0], indices_da_memoria[0]))
             self.espacos_ocupados[job.name] = indices_da_memoria
             self.jobs_ativos.append(job)
-            for i in range(*indices_da_memoria):
+            for i in range(indices_da_memoria[0], indices_da_memoria[1] + 1):
                 self.espacos_de_memoria[i] = job.id
             print('Alocado!')
             print('\n###################################### ESTADO DA MEMORIA #########################################')
@@ -58,9 +58,9 @@ class Memoria:
         indices_da_memoria = self.espacos_ocupados.pop(job_name)
         self._remove_job_ativo(job_name)
         print('Removendo job {} da memória. Liberando as posicoes de {} a {}'.format(job_name, indices_da_memoria[0],
-                                                                          indices_da_memoria[0]))
+                                                                          indices_da_memoria[1]))
 
-        for i in range(*indices_da_memoria):
+        for i in range(indices_da_memoria[0], indices_da_memoria[1] + 1):
             self.espacos_de_memoria[i] = ESPACO_LIVRE
 
         if not self.fila_de_espera.isEmpty():
@@ -76,7 +76,7 @@ class Memoria:
         print('Jobs na fila da memória, por ordem:')
         for job in self.fila_de_espera.queue:
             print(job)
-        print('\nJobs na memória, e posicoes que ocupam:')
+        print('\nArquivos na memória, e posicoes que ocupam:')
         for key, value in self.espacos_ocupados.items():
             print('Job {}:'.format(key))
             print('\tPosicoes: [{}, {}]'.format(value[0], value[1]))

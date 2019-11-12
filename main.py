@@ -31,6 +31,7 @@ while not encerrar or not sistema_operacional.is_free():
             sistema_operacional.remove_job(row)
         else:
             encerrar = True
+
     sistema_operacional.processa_ciclo()
     time.sleep(0.1)
     clock += 1
